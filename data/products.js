@@ -43,7 +43,7 @@
     return '';
   }
  }
-
+220544
 
  class  Clothing extends Product{
 
@@ -66,6 +66,67 @@ extraInfroHTML(){
  
 
  export const products = [
+  {
+    id: "1",
+    image: "images/products/lumonde.jpeg",
+    name: "Lumonde(Bukadeffu) 1kg",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 2666,
+    keywords: [
+      "socks",
+      "sports",
+      "apparel"
+    ]
+  },
+  {
+    id: "2",
+    image: "images/products/matooke.png",
+    name: "Fresh Baganda Matooke 1kg",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 2266,
+    keywords: [
+      "socks",
+      "sports",
+      "apparel"
+    ]
+  },
+  {
+    id: "3",
+    image: "images/products/eggs.png",
+    name: "Premuim Local Ugandan Eggs 1 Tray",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 1600,
+    keywords: [
+      "socks",
+      "sports",
+      "apparel"
+    ]
+  },
+  {
+    id: "4",
+    image: "images/products/yams.jpeg",
+    name: "Bwayise Ugandan Yams 1kg",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 4159,
+    keywords: [
+      "socks",
+      "sports",
+      "apparel"
+    ]
+  }
+  ,
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
     image: "images/products/athletic-cotton-socks-6-pairs.jpg",

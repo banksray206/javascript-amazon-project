@@ -1,6 +1,6 @@
 import {cart, addToCart} from '../data/cart.js';
 import {products} from '../data/products.js';
-import {formatCurrency} from './utils/money.js';  
+import {formatCurrency , formatToSar} from './utils/money.js';  
 
 
 
@@ -28,7 +28,7 @@ ${product.name}
 </div>
 
 <div class="product-price">
-  $${product.getPrice()}
+  SAR ${formatToSar(product.getPrice())}
 </div>
 
 <div class="product-quantity-container">
