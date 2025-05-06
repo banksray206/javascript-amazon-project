@@ -3,6 +3,6 @@
 } 
 
 export function formatToSar(priceDollar){
-  return Math.round(((priceDollar)/0.27)).toFixed(2)
+  return Math.round(((priceDollar)/0.27)).toFixed(2);
 
 };

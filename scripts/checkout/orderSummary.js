@@ -1,6 +1,6 @@
 import {cart, removeFromCart, updateDeliveryOption} from '../../data/cart.js';
 import {getProduct, products} from '../../data/products.js';
-import {formatCurrency} from '../utils/money.js';
+import {formatCurrency, formatToSar} from '../utils/money.js';
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js'
 import {deliveryOptions, getDeliveryOption} from '../../data/deliveryOptions.js';
 import { renderPaymentSummary } from './paymentSumarry.js';
@@ -51,7 +51,7 @@ export function renderOrderSummary(){
           ${matchingProduct.name}
           </div>
           <div class="product-price">
-          $${matchingProduct.getPrice()}
+          SAR ${formatToSar(matchingProduct.getPrice())}
           </div>
           <div class="product-quantity">
             <span>
@@ -92,7 +92,7 @@ export function renderOrderSummary(){
 
       const priceString = deliveryOption.priceCents === 0
       ?'FREE'
-      : `$${formatCurrency(deliveryOption.priceCents)} -`
+      : `SAR ${formatToSar(formatCurrency(deliveryOption.priceCents))} -`
 
     const isChecked = deliveryOption.id === cartItem.deliveryOptionsId 
     
