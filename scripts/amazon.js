@@ -1,4 +1,4 @@
-import {cart, addToCart} from '../data/cart.js';
+import {cart, addToCart, } from '../data/cart.js';
 import {products} from '../data/products.js';
 import {formatCurrency , formatToSar} from './utils/money.js';  
 
@@ -47,9 +47,10 @@ ${product.name}
 </div>
 ${product.extraInfroHTML()}
 
-<div class="product-spacer"></div>
+<div class="product-spacer">
+</div>
 
-<div class="added-to-cart">
+<div id="${product.id}" data-product-id ="${product.id}" class="added-to-cart">
   <img src="images/icons/checkmark.png">
   Added
 </div>
@@ -61,6 +62,9 @@ ${product.extraInfroHTML()}
  `
 }
 );
+
+
+
 
 function updateCartQuantity(){
 
@@ -75,6 +79,27 @@ function updateCartQuantity(){
 
   document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 }
+
+
+function showCartMessage(productId) {
+
+  const message = document.getElementById(`${productId}`);
+  if (message) {
+    console.log(message);
+
+    // Show the message
+    message.style.opacity = 1;
+    message.style.visibility = 'visible';
+
+    // Hide the message after 3 seconds
+    setTimeout(() => {
+      message.style.opacity = 0;
+      message.style.visibility = 'hidden';
+    }, 2000);
+  }
+}
+
+
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
 document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
@@ -82,13 +107,24 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
     const productId= button.dataset.productId;
     addToCart(productId);
     updateCartQuantity();
+    showCartMessage(productId)
+
+      
+
+  }
+
+
+
+    
+
+
 
 
       
     
 
     
-  });
+  );
 });
 
 
