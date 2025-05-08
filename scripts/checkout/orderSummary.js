@@ -8,7 +8,6 @@ import { renderPaymentSummary } from './paymentSumarry.js';
 
 
 
-localStorage.clear();
 
 
 
