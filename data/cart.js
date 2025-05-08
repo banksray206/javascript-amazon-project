@@ -1,15 +1,7 @@
  export let cart =  JSON.parse(localStorage.getItem('cart') ) 
  
  if(!cart){
- cart = [ { productId:'1',
-  Quantity: 2,
-  deliveryOptionsId: '1'
-},{
-  productId:'2',
-  Quantity: 1,  
-  deliveryOptionsId: '2'
-}
-
+ cart = [ 
  ]};
 
  function saveToStorage(){
