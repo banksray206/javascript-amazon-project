@@ -8,7 +8,7 @@ import { renderPaymentSummary } from './paymentSumarry.js';
 
 
 
-
+localStorage.clear();
 
 
 
@@ -20,6 +20,7 @@ export function renderOrderSummary(){
 
       const productId = cartItem.productId;
      const matchingProduct= getProduct(productId); 
+     console.log(matchingProduct);
 
       const deliveryOptionId = cartItem.deliveryOptionsId;
 
