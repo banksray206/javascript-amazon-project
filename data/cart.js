@@ -61,3 +61,17 @@ export function updateDeliveryOption(productId, deliveryOptionsId){
 };
 
 
+
+export function loadcart(){
+  let cartQuantity = 0 ;
+
+  cart.forEach(
+    (cartItem) => {
+    cartQuantity += cartItem.Quantity;
+    }
+
+  )
+  return cartQuantity;
+}
+
+

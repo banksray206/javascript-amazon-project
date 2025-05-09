@@ -13,9 +13,7 @@
   left: 0;
   right: 0;
   height: 60px;
-  border-bottom-style: solid ;
-  border-bottom-color: rgb(214, 211, 211) ;
-  border-bottom-width: 1px ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -84,6 +82,7 @@
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  margin-left: 20px;
 }
 
 .search-button {
@@ -109,6 +108,8 @@
   justify-content: end; */
 }
 
+
+
 @media(max-width:768px){
   .amazon-logo {
     height: 35px;
@@ -117,7 +118,8 @@
   .search-bar {
     font-size: 14px;
     height: 28px;
-    width: 30px;
+    width: 100px;
+    margin-left: 40px;
   }
   .search-button {
     width: 35px;
@@ -133,6 +135,7 @@
      margin-top: 6px;
     top: 60px;
     left: 18px;
+    padding-left: 10px;
     
   }
   .returns-text {
@@ -228,7 +231,7 @@ border-top-right-radius: 10px;
   text-align: center;
   padding: 6px;
   padding-top: 7px;
-  margin-left: 50px;
+  margin-left: 80px;
 }
 
 

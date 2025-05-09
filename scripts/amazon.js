@@ -1,9 +1,9 @@
-import {cart, addToCart, } from '../data/cart.js';
+import {cart, addToCart, loadcart, } from '../data/cart.js';
 import {products} from '../data/products.js';
 import {formatCurrency , formatToSar} from './utils/money.js';  
 
 
-
+updateCartQuantity();
 
 let productsHTML = '';
 
@@ -11,7 +11,7 @@ products.forEach((product) =>{
 productsHTML += 
 `<div class="product-container">
 <div class="product-image-container">
-  <img class="product-image"
+  <img class="product-image" 
     src="${product.image}">
 </div>
 
@@ -68,7 +68,7 @@ ${product.extraInfroHTML()}
 
 function updateCartQuantity(){
 
-  let cartQuantity = 0;
+  let cartQuantity = loadcart()? 0: 0
 
   cart.forEach(
     (cartItem) => {
@@ -85,7 +85,7 @@ function showCartMessage(productId) {
 
   const message = document.getElementById(`${productId}`);
   if (message) {
-    console.log(message);
+   
 
     // Show the message
     message.style.opacity = 1;
@@ -108,22 +108,9 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
     addToCart(productId);
     updateCartQuantity();
     showCartMessage(productId)
+   
 
-      
-
-  }
-
-
-
-    
-
-
-
-
-      
-    
-
-    
+  }    
   );
 });
 

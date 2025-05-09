@@ -1,3 +1,4 @@
+import {updateCheckoutQuantity} from "./checkout/checkoutItems.js";
 import { renderOrderSummary } from "./checkout/orderSummary.js";  
 
 import {renderPaymentSummary} from "./checkout/paymentSumarry.js"
@@ -7,3 +8,4 @@ import {renderPaymentSummary} from "./checkout/paymentSumarry.js"
 
 renderOrderSummary();
 renderPaymentSummary(); 
+updateCheckoutQuantity(); // Update the checkout quantity in the header

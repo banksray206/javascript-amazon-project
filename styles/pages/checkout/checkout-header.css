@@ -3,6 +3,7 @@
   padding-left: 30px;
   padding-right: 30px;
   background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   display: flex;
   justify-content: center;
@@ -62,12 +63,6 @@
   
 
 
-  .amazon-mobile-logo {
-    /* display: inline-block;
-    height: 35px;
-    margin-top: 5px; */
-
-  }
   
 }
 
@@ -81,14 +76,45 @@
 
   display: flex;
   justify-content: center;
+  padding-top : 15px;
 }
 
-.return-to-home-link {
-  color: rgb(0, 113, 133);
+.cart-quantity{
+  /* color: rgb(0, 113, 133);
   font-size: 23px;
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer; */
+
+  color:rgb(235, 243, 235);
+  font-size: 16px;
+  font-weight: 700;
+/* 
+border-style: solid; */
+background-color: rgb(6, 206, 6);
+/* border-color: orange; */
+/* border-right: none;
+border-top: none;
+border-top-right-radius: 10px;
+ */
+/* 
+  position: absolute; */
+  /* top: 4px; */
+  /* left: 22px;
+  
+  margin-bottom: 15px; */
+/*   
+  width: 30px;*/
+  width: 20px;
+  border-radius: 30px;
+  margin-bottom: 9px;
+  text-align: center;
+  padding: 6px;
+  padding-top: 7px;
+  margin-left: 50px;
+  margin-bottom: 17px;
 }
+
+
 
 @media (max-width: 1000px) {
   .checkout-header-middle-section {
