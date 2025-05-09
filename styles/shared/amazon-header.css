@@ -20,6 +20,12 @@
 .amazon-header-left-section {
   width: 180px;
 }
+@media (max-width: 300px) {
+  .cart-quantity {
+    margin-left: 10px;
+  
+  }
+}
 
 @media (max-width: 800px) {
   .amazon-header-left-section {
@@ -65,7 +71,7 @@
    
     padding: 1px;
     padding-top: 7px;
-    margin-right: 400px;
+   margin-left: 10px;
   }
   
 
@@ -247,7 +253,8 @@ border-top-right-radius: 10px;
   text-align: center;
   padding: 6px;
   padding-top: 7px;
-  margin-left: 80px;
+  margin-left: 50px;
+  margin-right: 20px;
 }
 
 
