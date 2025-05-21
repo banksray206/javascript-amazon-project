@@ -54,7 +54,7 @@ cart.forEach((cartItem) =>
           </div>
 
           <button class="place-order-button button-primary js-place-order-button">
-           <a href = "https://wa.me/966536589391/?text=${cart}"> Place your order <a/>
+           <a href = "https://wa.me/966545699674/?text=${cart}"> Place your order <a/>
           </button>`;
           
       document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHTML;
