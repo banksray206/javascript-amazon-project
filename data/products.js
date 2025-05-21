@@ -68,7 +68,7 @@ extraInfroHTML(){
  export const products = [
     {
     id: "1A",
-    image: "images/products/20250407_031927.jpg",
+    image: "images/products/password.jpg",
     name: "PASSWORD",
     rating: {
       stars: 4.5,
