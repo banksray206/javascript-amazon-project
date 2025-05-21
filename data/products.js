@@ -66,6 +66,21 @@ extraInfroHTML(){
  
 
  export const products = [
+    {
+    id: "1A",
+    image: "images/products/password.jpeg",
+    name: "PASSWORD",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 2666,
+    keywords: [
+      "socks",
+      "sports",
+      "apparel"
+    ]
+    },
   {
     id: "1",
     image: "images/products/lumonde.jpeg",
