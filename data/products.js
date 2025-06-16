@@ -66,10 +66,25 @@ extraInfroHTML(){
  
 
  export const products = [
+  {
+    id: "1AA",
+    image: "images/products/mobily.jpeg",
+    name: "Mobily Packages",
+    rating: {
+      stars: 4.5,
+      count: 87
+    },
+    priceCents: 2666,
+    keywords: [
+      "socks",
+      "sports",
+      "apparel"
+    ]
+    },
     {
     id: "1A",
-    image: "images/products/password.jpg",
-    name: "PASSWORD",
+    image: "images/products/password.jpeg",
+    name: "Password Driver Jaddah,Riyadh,Mecca",
     rating: {
       stars: 4.5,
       count: 87
